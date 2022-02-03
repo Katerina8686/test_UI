@@ -17,16 +17,16 @@ public class TriangleTest {
     @Test
     @DisplayName("Рассчитать площадь треугольника по трем сторонам")
     void calculateAreaOfTriangle() throws Exception {
-       FindAreaOfTriangle.findOfAreaTriangle(3, 5, 4);
-       // Assertions.assertEquals(6 );
+       int r= FindAreaOfTriangle.findOfAreaTriangle(3, 5, 4);
+        Assertions.assertEquals(6,r);
 
     }
 
     @Test
     @DisplayName("Расчитать площадь треугольника с отрицательным числом")
     void  calculateAreaOfTriangleWithNegativeNumber() throws Exception {
-        FindAreaOfTriangle.findOfAreaTriangle(-3,-5,-4);
-        //Assertions.assertEquals(-6);
+        int r = FindAreaOfTriangle.findOfAreaTriangle(-3,-5,-4);
+        Assertions.assertEquals(-6, r);
 
     }
 
