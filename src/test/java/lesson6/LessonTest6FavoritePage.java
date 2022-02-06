@@ -1,21 +1,14 @@
 package lesson6;
 
-import com.geekbrains.com.geekbrains.lesson6.LoginPage;
+import com.geekbrains.com.geekbrains.lesson6.FavoritePage;
 import io.github.bonigarcia.wdm.WebDriverManager;
-import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.logging.LogEntries;
-import org.openqa.selenium.logging.LogEntry;
-import org.openqa.selenium.logging.LogType;
-import org.openqa.selenium.support.events.EventFiringDecorator;
 
-import java.util.Iterator;
-
-public class LessonTest6LoginPage {
+public class LessonTest6FavoritePage {
     WebDriver driver;
     //EventFiringWebDriver eventFiringWebDriver;
     private final static String DRESS_URL = "https://1001dress.ru";
@@ -36,7 +29,7 @@ public class LessonTest6LoginPage {
 
     @Test
     void likeBookmark() {
-        new LoginPage(driver)
+        new FavoritePage(driver)
                 .checkBookmark();
     }
 }

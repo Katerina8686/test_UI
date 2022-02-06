@@ -10,9 +10,9 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static ru.yandex.qatools.htmlelements.matchers.WebElementMatchers.isDisplayed;
 
-public class LoginPage extends BasePage {
+public class FavoritePage extends BasePage {
 
-    public LoginPage(WebDriver driver){
+    public FavoritePage(WebDriver driver){
         super(driver);
     }
 
