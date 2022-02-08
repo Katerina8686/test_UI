@@ -1,4 +1,5 @@
 package com.geekbrains.com.geekbrains.lesson6;
+import io.qameta.allure.Step;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -24,7 +25,7 @@ public class FavoritePage extends BasePage {
 //    @FindBy(xpath = "//a[@id='delay_btn']")
 //    private WebElement bookmark;
 
-
+    @Step("Проверить закладку")
     public void checkBookmark() {
         webDriverWait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(By.xpath("//nav//ul//li//a[@href='/plus-size']")));
         plus.click();
